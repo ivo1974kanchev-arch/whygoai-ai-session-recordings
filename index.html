@@ -1,1 +1,447 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WhyGoAI – AI session recordings that tell you why </title><meta name="description" content="Unlock User Intent with AI"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#080810;color:#e0e0f0;min-height:100vh}nav{padding:1.2rem 2rem;border-bottom:1px solid #1a1a2e;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#080810;z-index:10}.logo{font-size:1.05rem;font-weight:700;color:#8b7cf8}.nav-cta{background:#8b7cf8;color:#fff;padding:.45rem 1.1rem;border-radius:7px;font-size:.85rem;font-weight:600;text-decoration:none}.hero{max-width:720px;margin:0 auto;padding:5rem 2rem 3rem;text-align:center}.badge{display:inline-block;background:#1a1a2e;border:1px solid #2a2a4e;color:#8b7cf8;font-size:.75rem;font-weight:600;padding:.35rem .9rem;border-radius:20px;margin-bottom:1.8rem;text-transform:uppercase}h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;line-height:1.15;margin-bottom:1.2rem}.hl{color:#8b7cf8}.sub{font-size:1.1rem;color:#7878a0;line-height:1.7;margin-bottom:2.5rem;max-width:520px;margin-left:auto;margin-right:auto}.cta-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}.btn-primary{background:#8b7cf8;color:#fff;padding:.85rem 2rem;border-radius:9px;font-size:1rem;font-weight:700;text-decoration:none}.btn-secondary{background:transparent;color:#8b7cf8;padding:.85rem 2rem;border-radius:9px;font-size:1rem;font-weight:600;text-decoration:none;border:1px solid #2a2a4e}.features{max-width:720px;margin:2rem auto 5rem;padding:0 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.2rem}.feat{background:#0e0e1c;border:1px solid #1a1a2e;border-radius:12px;padding:1.6rem}.feat-icon{font-size:1.6rem;margin-bottom:.8rem}.feat h3{font-size:.9rem;font-weight:700;margin-bottom:.4rem;color:#c0c0d8}.feat p{font-size:.82rem;color:#5a5a7a;line-height:1.55}.waitlist{max-width:480px;margin:0 auto 5rem;padding:0 2rem;text-align:center}.waitlist h2{font-size:1.5rem;font-weight:700;margin-bottom:.6rem}.waitlist p{color:#7878a0;font-size:.9rem;margin-bottom:1.5rem}.input-row{display:flex;gap:.6rem}.input-row input{flex:1;background:#0e0e1c;border:1px solid #1a1a2e;border-radius:8px;padding:.75rem 1rem;color:#e0e0f0;font-size:.9rem;outline:none}.input-row button{background:#8b7cf8;color:#fff;border:none;border-radius:8px;padding:.75rem 1.2rem;font-weight:700;cursor:pointer;font-size:.9rem}footer{text-align:center;padding:2rem;color:#2a2a4e;font-size:.78rem;border-top:1px solid #1a1a2e}</style></head><body><nav><span class="logo">WhyGoAI – AI session recordings that tell you why </span><a href="#waitlist" class="nav-cta">Early access</a></nav><div class="hero"><div class="badge">Launching 2026</div><h1>Unlock User Intent with AI</h1><p class="sub">For Product Managers, Marketers</p><div class="cta-group"><a href="#waitlist" class="btn-primary">Get early access</a><a href="#features" class="btn-secondary">Learn more</a></div></div><div class="features" id="features"><div class="feat"><div class="feat-icon">&#x26A1;</div><h3>Instant Insights on Exit Reasons</h3><p>Purpose-built for speed without sacrificing quality.</p></div><div class="feat"><div class="feat-icon">&#x1F4CA;</div><h3>Enhanced Customer Feedback Analysis</h3><p>Clear insights, zero friction from day one.</p></div><div class="feat"><div class="feat-icon">&#x1F517;</div><h3>Personalized User Experience Recommendations</h3><p>Plug into your existing workflow in minutes.</p></div></div><div class="waitlist" id="waitlist"><h2>Get early access</h2><p>Join the waitlist and we will reach out when ready.</p><div class="input-row"><input type="email" placeholder="your@email.com"><button>Join</button></div></div><footer>2026 WhyGoAI – AI session recordings that tell you why  - Built with AI Venture Studio</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhyGoAI – AI session recordings that tell you why — Unlock User Intent with AI</title>
+<meta name="description" content="Unlock User Intent with AI. Built for Marketing teams at SMBs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --coral: #cc785c;
+  --coral-active: #a9583e;
+  --ink: #141413;
+  --body: #3d3d3a;
+  --body-strong: #252523;
+  --muted: #6c6a64;
+  --muted-soft: #8e8b82;
+  --hairline: #e6dfd8;
+  --canvas: #faf9f5;
+  --surface-card: #efe9de;
+  --surface-cream-strong: #e8e0d2;
+  --surface-dark: #181715;
+  --surface-dark-elevated: #252320;
+  --surface-dark-soft: #1f1e1b;
+  --on-dark: #faf9f5;
+  --on-dark-soft: #a09d96;
+  --accent-teal: #5db8a6;
+  --accent-amber: #e8a55a;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--body);
+  background: var(--canvas);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ──────────────────────────────── */
+.display-lg {
+  font-family: 'Cormorant Garamond', 'Garamond', 'Times New Roman', serif;
+  font-size: clamp(36px, 5vw, 48px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+}
+.display-sm {
+  font-family: 'Cormorant Garamond', 'Garamond', 'Times New Roman', serif;
+  font-size: clamp(24px, 3.5vw, 28px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+.title-lg { font-size:22px; font-weight:500; line-height:1.3; color:var(--ink); }
+.title-md { font-size:18px; font-weight:500; line-height:1.4; color:var(--ink); }
+.body-md  { font-size:16px; line-height:1.55; color:var(--body); }
+.body-sm  { font-size:14px; line-height:1.55; color:var(--muted); }
+.caption  { font-size:12px; font-weight:500; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); }
+
+/* ── Layout ──────────────────────────────────── */
+.section { padding: 96px 24px; }
+.section-sm { padding: 64px 24px; }
+.container { max-width: 1100px; margin: 0 auto; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+.grid-3 { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+
+/* ── Navigation ──────────────────────────────── */
+.top-nav {
+  position: sticky; top:0; z-index:100;
+  background: var(--canvas);
+  border-bottom: 1px solid var(--hairline);
+  height: 64px; display:flex; align-items:center;
+}
+.top-nav .container {
+  display:flex; justify-content:space-between; align-items:center;
+  width:100%; max-width:1100px; margin:0 auto; padding:0 24px;
+}
+.nav-brand {
+  display:flex; align-items:center; gap:8px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 500; color: var(--ink);
+  text-decoration: none;
+}
+.nav-brand-icon {
+  width: 32px; height: 32px;
+  background: var(--coral); border-radius: 8px;
+  display:flex; align-items:center; justify-content:center;
+  color: #fff; font-weight:600; font-size:14px;
+}
+.nav-cta {
+  background: var(--coral); color: #fff;
+  font-size: 14px; font-weight: 500;
+  padding: 10px 20px; border-radius: 8px;
+  text-decoration: none; line-height: 1;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--coral-active); }
+
+/* ── Buttons ─────────────────────────────────── */
+.btn-primary {
+  display:inline-block;
+  background: var(--coral); color: #fff;
+  font-size: 14px; font-weight: 500;
+  padding: 12px 24px; border-radius: 8px;
+  text-decoration: none; line-height: 1;
+  transition: background 0.2s; border:none; cursor:pointer;
+}
+.btn-primary:hover { background: var(--coral-active); }
+.btn-secondary {
+  display:inline-block;
+  background: transparent; color: var(--ink);
+  font-size: 14px; font-weight: 500;
+  padding: 12px 24px; border-radius: 8px;
+  text-decoration: none; line-height: 1;
+  border: 1px solid var(--hairline);
+  transition: border-color 0.2s;
+}
+.btn-secondary:hover { border-color: var(--muted-soft); }
+
+/* ── Hero ────────────────────────────────────── */
+.hero-band {
+  background: var(--canvas);
+  padding: 80px 24px 64px;
+  text-align: center;
+}
+.hero-badge {
+  display:inline-block;
+  background: var(--surface-card); color: var(--ink);
+  font-size: 12px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px; border-radius: 9999px;
+  margin-bottom: 24px;
+}
+.hero-band h1 { margin-bottom: 20px; }
+.hero-sub {
+  font-size: 18px; color: var(--body);
+  max-width: 520px; margin: 0 auto 36px;
+  line-height: 1.6;
+}
+.hero-actions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.hero-mockup {
+  max-width: 720px; margin: 48px auto 0;
+  background: var(--surface-dark);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-mockup-dots {
+  display:flex; gap:6px; margin-bottom: 20px;
+}
+.hero-mockup-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--on-dark-soft); opacity: 0.4;
+}
+.hero-mockup-code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 13px; color: var(--on-dark-soft);
+  line-height: 1.8;
+}
+.hero-mockup-highlight {
+  color: var(--accent-teal);
+}
+
+/* ── Problem (Before/After) ──────────────────── */
+.problem-band { background: var(--canvas); }
+.problem-old, .problem-new {
+  padding: 32px;
+  border-radius: 12px;
+}
+.problem-old {
+  background: var(--surface-card);
+  border-left: 3px solid var(--muted-soft);
+}
+.problem-new {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent-teal);
+}
+.problem-label {
+  font-size: 12px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase; margin-bottom: 12px;
+}
+.problem-label.old { color: var(--muted); }
+.problem-label.new { color: var(--accent-teal); }
+
+/* ── Feature Cards ───────────────────────────── */
+.features-band { background: var(--canvas); }
+.features-header {
+  text-align: center; margin-bottom: 48px;
+}
+.features-header h2 { margin-bottom: 12px; }
+.features-header p { max-width: 480px; margin: 0 auto; }
+
+.feat-card {
+  background: var(--surface-card);
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.2s;
+}
+.feat-card:hover { transform: translateY(-2px); }
+.feat-icon {
+  width: 48px; height: 48px;
+  border-radius: 10px; margin-bottom: 20px;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 22px;
+}
+.feat-icon.coral { background: rgba(204,120,92,0.12); }
+.feat-icon.dark  { background: rgba(24,23,21,0.06); }
+.feat-card h3 { margin-bottom: 8px; }
+.feat-card p  { font-size: 15px; color: var(--body); line-height: 1.6; }
+
+/* ── Waitlist CTA ────────────────────────────── */
+.cta-band {
+  background: var(--coral);
+  padding: 64px 24px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 24px 96px;
+}
+.cta-band h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px; font-weight: 400;
+  line-height: 1.2; letter-spacing: -0.5px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.cta-band p  { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+.cta-form {
+  display:flex; gap:8px; max-width: 420px; margin:0 auto;
+}
+.cta-form input {
+  flex:1; padding: 12px 16px;
+  border: none; border-radius: 8px;
+  font-size: 15px; font-family: 'Inter', sans-serif;
+  background: #fff; color: var(--ink);
+  outline: none;
+}
+.cta-form input:focus { box-shadow: 0 0 0 3px rgba(255,255,255,0.3); }
+.cta-form button {
+  background: var(--surface-dark); color: #fff;
+  border: none; border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px; font-weight: 500; font-family: 'Inter', sans-serif;
+  cursor: pointer; white-space: nowrap;
+  transition: background 0.2s;
+}
+.cta-form button:hover { background: var(--surface-dark-elevated); }
+.cta-form button:disabled { opacity:0.6; cursor:default; }
+.cta-success {
+  display:none; color:#fff; margin-top:16px;
+  font-size:15px; font-weight:500;
+}
+
+/* ── Footer ──────────────────────────────────── */
+.footer-band {
+  background: var(--surface-dark);
+  padding: 64px 24px;
+  text-align: center;
+}
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; color: var(--on-dark);
+  margin-bottom: 8px;
+}
+.footer-tagline { color: var(--on-dark-soft); font-size: 14px; margin-bottom: 24px; }
+.footer-links {
+  display:flex; gap:32px; justify-content:center; flex-wrap:wrap;
+  margin-bottom: 32px;
+}
+.footer-links a { color: var(--on-dark-soft); text-decoration:none; font-size:14px; }
+.footer-links a:hover { color: var(--on-dark); }
+.footer-copy { color: var(--on-dark-soft); font-size: 12px; }
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+  .section, .section-sm { padding: 64px 20px; }
+  .grid-2 { grid-template-columns:1fr; gap:32px; }
+  .grid-3 { grid-template-columns:1fr; gap:16px; }
+  .hero-band { padding: 48px 20px 40px; }
+  .hero-mockup { margin-top: 32px; padding: 20px; }
+  .cta-band { margin: 0 20px 64px; padding: 48px 20px; }
+  .cta-form { flex-direction:column; }
+  .display-lg { font-size: 32px; }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top-nav">
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <span class="nav-brand-icon">E</span>
+      Eptus
+    </a>
+    <a href="#waitlist" class="nav-cta">Join waitlist</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-band">
+  <div class="container">
+    <span class="hero-badge">Launching soon</span>
+    <h1 class="display-lg">WhyGoAI – AI session recordings that tell you why</h1>
+    <p class="hero-sub">Unlock User Intent with AI. Built for Marketing teams at SMBs.</p>
+    <div class="hero-actions">
+      <a href="#waitlist" class="btn-primary">Try Now Free</a>
+      <a href="#features" class="btn-secondary">Learn more</a>
+    </div>
+    <div class="hero-mockup">
+      <div class="hero-mockup-dots"><span class="hero-mockup-dot"></span><span class="hero-mockup-dot"></span><span class="hero-mockup-dot"></span></div>
+      <div class="hero-mockup-code">
+        <span class="hero-mockup-highlight">$</span> whygoai-–-ai-session-recordings-that-tell-you-why init<br>
+        <span style="color:var(--accent-amber)">→</span> Setting up WhyGoAI – AI session recordings that tell you why...<br>
+        <span style="color:var(--accent-teal))">✓</span> Ready in 60 seconds. <span class="hero-mockup-highlight">Join waitlist →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section-sm problem-band">
+  <div class="container">
+    <div class="grid-2">
+      <div class="problem-old">
+        <p class="problem-label old">The old way</p>
+        <p class="body-md" style="color:var(--body)">Manual transcription is time-consuming and error-prone</p>
+      </div>
+      <div class="problem-new">
+        <p class="problem-label new">With WhyGoAI</p>
+        <p class="body-md" style="color:var(--body-strong)">AI-powered recordings save hours and improve accuracy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section features-band" id="features">
+  <div class="container">
+    <div class="features-header">
+      <h2 class="display-sm">Why WhyGoAI</h2>
+      <p class="body-md">Everything you need, nothing you don't.</p>
+    </div>
+    <div class="grid-3">
+      <div class="feat-card">
+        <div class="feat-icon coral">&#9670;</div>
+        <h3>Automatically transcribe and analyze sessions</h3>
+        <p>Purpose-built from the ground up to deliver results without the overhead of traditional solutions.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon dark">&#9671;</div>
+        <h3>Identify key insights for user feedback</h3>
+        <p>Designed with clarity in mind. Get insights at a glance, take action in seconds&mdash;no training required.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon coral">&#9670;</div>
+        <h3>Generate detailed reports in minutes</h3>
+        <p>Plugs into your existing workflow. Start seeing value from day one, not month three.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST CTA -->
+<section class="cta-band" id="waitlist">
+  <h2>Be the first to try WhyGoAI</h2>
+  <p>Join early adopters on the waitlist. We'll reach out when we launch.</p>
+  <form class="cta-form" id="waitlist-form">
+    <input type="email" id="email-input" placeholder="Your email address" required>
+    <button type="submit" id="submit-btn">Get early access</button>
+  </form>
+  <p class="cta-success" id="cta-success">You're on the list &#10003;</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-band">
+  <div class="footer-brand">Eptus Studio</div>
+  <p class="footer-tagline">Where ventures begin.</p>
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Privacy</a>
+    <a href="#">Contact</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Eptus Studio. All rights reserved.</p>
+</footer>
+
+<script>
+// Waitlist form
+(function() {
+  var form = document.getElementById('waitlist-form');
+  var input = document.getElementById('email-input');
+  var btn = document.getElementById('submit-btn');
+  var success = document.getElementById('cta-success');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = input.value.trim();
+    if (!email || !email.includes('@')) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Joining...';
+
+    // Try Supabase first if configured
+    var sbUrl = 'SUPABASE_URL_PLACEHOLDER';
+    var sbKey = 'SUPABASE_ANON_KEY_PLACEHOLDER';
+    var ideaId = 'IDEA_ID_PLACEHOLDER';
+    var ideaName = 'IDEA_NAME_PLACEHOLDER';
+
+    if (sbUrl && sbUrl !== 'SUPABASE_URL_PLACEHOLDER' && window.supabase) {
+      var sb = window.supabase.createClient(sbUrl, sbKey);
+      sb.from('waitlist').insert({
+        email: email,
+        idea_id: ideaId,
+        idea_name: ideaName,
+        source: 'landing_page'
+      }).then(function() {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }).catch(function() {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      });
+    } else {
+      // Fallback — just show success
+      setTimeout(function() {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }, 600);
+    }
+  });
+})();
+</script>
+</body>
+</html>
